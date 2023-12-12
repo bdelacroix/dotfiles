@@ -3,14 +3,17 @@
 	name = Bastien Delacroix
 
 [alias]
-  logo = log --oneline
-	cm   = commit -m
+	ca   = commit --amend
 	can  = commit --amend --no-edit
 	co   = checkout
+	cm   = commit -m
 	cp   = cherry-pick
+	fp   = !git fetch && git pull origin HEAD
 	lga  = log --graph --pretty=tformat:'%Cred%h%Creset -%C(cyan)%d %Creset%s %Cgreen(%an %cr)%Creset' --abbrev-commit --all
-	preprod = !git checkout preprod && git fetch && git pull
-	st = status
+	logo = log --oneline
+	pf   = push --force origin HEAD
+	rc   = rebase --continue
+	st   = status
 [safe]
 	directory = /home/bdelacroix/Projets/eev2
 	directory = /home/bdelacroix/Projets/eev2
