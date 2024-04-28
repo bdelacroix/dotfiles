@@ -1,0 +1,40 @@
+regolith.lockscreen.wallpaper.file: /usr/share/regolith-look/ayu/wallpaper.jpg
+regolith.lockscreen.wallpaper.options: zoom
+
+
+regolith.wallpaper.file: /usr/share/regolith-look/ayu/wallpaper.jpg
+regolith.wallpaper.options: zoom
+
+wm.bar.position: top
+## Catppuccin specific tweaks
+wm.bar.workspace.focused.border.color: #F2D5CE
+wm.bar.workspace.focused.background.color: #F2D5CE
+wm.bar.workspace.focused.text.color: #000000
+
+wm.gaps.inner.size: 15
+
+## Open floating window for file explorer
+wm.program.files: /usr/bin/nautilus --new-window --class=floating_window
+
+## Workspaces colors based on Catppuccin Rosewater accent
+wm.workspace.01.name: 1: <span>1 <span foreground="#EAB9AE"></span> </span>
+wm.workspace.02.name: 2: <span>2 <span foreground="#E6AB9E"></span> </span>
+wm.workspace.03.name: 3: <span>3 <span foreground="#E29D8D"></span> </span>
+wm.workspace.04.name: 4: <span>4 <span foreground="#DC8A78"></span> </span>
+wm.workspace.05.name: 5: <span>5 <span foreground="#D9716D"></span> </span>
+wm.workspace.06.name: 6: <span>6 <span foreground="#D5735D"></span> </span>
+wm.workspace.07.name: 7: <span>7 <span foreground="#D1654D"></span> </span>
+wm.workspace.08.name: 8: <span>8 <span foreground="#CD573C"></span> </span>
+wm.workspace.09.name: 9: <span>9 <span foreground="#C34D32"></span> </span>
+wm.workspace.10.name: 10: <span>10 <span foreground="#B2462E"></span> </span>
+
+## Force font everywhere
+gtk.document_font_name: CommitMono Regular 12
+gtk.font_name: CommitMono Regular 12
+gtk.monospace_font_name: CommitMono Regular 12
+gnome.terminal.font: CommitMono Regular 12
+i3-wm.bar.font: CommitMono Regular 12
+i3-wm.font: CommitMono Regular 12
+i3xrocks.value.font: CommitMono Regular 12
+!regolith.look.path: /usr/share/regolith-look/ayu-mirage
+regolith.look.path: /usr/share/regolith-look/ayu

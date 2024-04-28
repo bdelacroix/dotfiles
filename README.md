@@ -1,12 +1,7 @@
-### Symlinks configuration files to this repository
-
-Configuration files are located in `~/dotfiles` and linked to their sources with symlinks.
-
-Based on the content of `~/dotfiles`, symlinks should be located in `~/` folder.
-
-#### Basic command to create a Symlink
+#### Regolith
 
 ```
-ln -s ~/dotfiles/<config_file> <config_file_location>
+ln -s ~/dotfiles/regolith3/Xresources ~/.config/regolith3/Xresources
+ln -s ~/dotfiles/regolith3/i3/config ~/.config/regolith3/i3/config
 ```
 
