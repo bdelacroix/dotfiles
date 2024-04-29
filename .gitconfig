@@ -15,5 +15,4 @@
 	rc   = rebase --continue
 	st   = status
 [safe]
-	directory = /home/bdelacroix/Projets/eev2
-	directory = /home/bdelacroix/Projets/eev2
+	directory = ~/Projets/eev2
