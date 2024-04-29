@@ -166,6 +166,7 @@ assign [class="Code"] $ws2
 assign [class="firefox"] $ws3
 assign [class="Microsoft Teams - Preview"] $ws4
 assign [class="Slack"] $ws5
+assign [class="Spotify"] $ws6
 
 # Autostart apps
 exec --no-startup-id i3-msg 'exec gnome-terminal --working-directory /home/bdelacroix/Projets/eev2 -- tmux'

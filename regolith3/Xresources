@@ -1,6 +1,6 @@
 regolith.lockscreen.wallpaper.file: ~/dotfiles/images/lunar-surface.jpg
 regolith.lockscreen.wallpaper.options: zoom
-
+regolith.look.path: /usr/share/regolith-look/ayu
 
 regolith.wallpaper.file: ~/dotfiles/images/lunar-surface.jpg
 regolith.wallpaper.options: zoom
@@ -36,4 +36,3 @@ gnome.terminal.font: CommitMono Regular 12
 i3-wm.bar.font: CommitMono Regular 12
 i3-wm.font: CommitMono Regular 12
 i3xrocks.value.font: CommitMono Regular 12
-regolith.look.path: /usr/share/regolith-look/ayu

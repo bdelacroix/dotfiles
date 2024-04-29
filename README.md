@@ -60,3 +60,31 @@ rm ~/.config/spicetify/Themes/Dribbblish/*.png
 ```
 
 See more : https://spicetify.app/docs/advanced-usage/themes
+
+### Other Tools
+
+#### Bat
+
+```
+sudo apt install bat
+```
+
+Due to a conflit with "bat" with another package, create a symlink "batcat > bat" to prevent issues with other packages/distributions
+
+```
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+
+### FZF
+
+```
+sudo apt install fzf
+```
+
+### Ripgrep
+
+```
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+sudo dpkg -i ripgrep_13.0.0_amd64.deb
+```
