@@ -1,8 +1,8 @@
-regolith.lockscreen.wallpaper.file: /usr/share/regolith-look/ayu/wallpaper.jpg
+regolith.lockscreen.wallpaper.file: ~/dotfiles/images/lunar-surface.jpg
 regolith.lockscreen.wallpaper.options: zoom
 
 
-regolith.wallpaper.file: /usr/share/regolith-look/ayu/wallpaper.jpg
+regolith.wallpaper.file: ~/dotfiles/images/lunar-surface.jpg
 regolith.wallpaper.options: zoom
 
 wm.bar.position: top
