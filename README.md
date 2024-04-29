@@ -1,3 +1,9 @@
+# What it the purpose of this repo ?
+
+The purpose of this repository is to allow quick and easy setup of the development environment I use on a daily basis. It gathers all my configuration files.
+
+# Configuration files
+
 ### Regolith
 
 ```
@@ -88,3 +94,10 @@ sudo apt install fzf
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
+
+# Font
+
+- [Commit Mono](https://commitmono.com/) (used for OS purposes)
+- [Dank Mono](https://philpl.gumroad.com/l/dank-mono) (used for VS Code coding font)
+
+***Note :*** fonts for OS purpose are explicitely defined in `~/dotfiles/regolith3/Xresources` configuration file.
