@@ -82,6 +82,13 @@ mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 ```
 
+Install Catppuccin Latte theme :
+
+```
+ln -s ~/dotfiles/bat  ~/.config/bat
+bat cache --build
+```
+
 ### FZF
 
 ```
