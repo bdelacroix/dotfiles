@@ -1,8 +1,8 @@
-# What it the purpose of this repo ?
+## What it the purpose of this repo ?
 
 The purpose of this repository is to allow quick and easy setup of the development environment I use on a daily basis. It gathers all my configuration files.
 
-# Configuration files
+## Configuration files
 
 ### Regolith
 
@@ -67,9 +67,7 @@ rm ~/.config/spicetify/Themes/Dribbblish/*.png
 
 See more : https://spicetify.app/docs/advanced-usage/themes
 
-### Other Tools
-
-#### Bat
+### Bat
 
 ```
 sudo apt install bat
@@ -89,20 +87,22 @@ ln -s ~/dotfiles/bat  ~/.config/bat
 bat cache --build
 ```
 
-### FZF
+### Other Tools
+
+#### FZF
 
 ```
 sudo apt install fzf
 ```
 
-### Ripgrep
+#### Ripgrep
 
 ```
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
 
-# Font
+## Fonts
 
 - [Commit Mono](https://commitmono.com/) (used for OS purposes)
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono) (used for VS Code coding font)
