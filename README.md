@@ -4,14 +4,14 @@ The purpose of this repository is to allow quick and easy setup of the developme
 
 ## Configuration files
 
-### Regolith
+### [Regolith](https://regolith-desktop.com/docs/using-regolith/install/)
 
 ```
 ln -s ~/dotfiles/regolith3/Xresources ~/.config/regolith3/Xresources
 ln -s ~/dotfiles/regolith3/i3/config ~/.config/regolith3/i3/config
 ```
 
-### Tmux
+### [Tmux](https://github.com/tmux/tmux)
 
 ```
 ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
@@ -23,7 +23,7 @@ ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-### Spotify
+### [Spotify](https://www.spotify.com/us/download/linux/)
 
 #### Installation
 
@@ -67,7 +67,7 @@ rm ~/.config/spicetify/Themes/Dribbblish/*.png
 
 See more : https://spicetify.app/docs/advanced-usage/themes
 
-### Bat
+### [Bat](https://github.com/sharkdp/bat)
 
 ```
 sudo apt install bat
@@ -89,13 +89,13 @@ bat cache --build
 
 ### Other Tools
 
-#### FZF
+#### [FZF](https://github.com/junegunn/fzf)
 
 ```
 sudo apt install fzf
 ```
 
-#### Ripgrep
+#### [Ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ```
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
