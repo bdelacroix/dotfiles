@@ -21,6 +21,9 @@ ln -s ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Install TPM plugins defined in .tmux.conf
+~/.tmux/plugins/tpm/bin/install_plugins
 ```
 
 ### [Spotify](https://www.spotify.com/us/download/linux/)
@@ -43,8 +46,12 @@ sudo chmod a+wr /usr/share/spotify/Apps -R
 Follow the [installation guide](https://spicetify.app/docs/advanced-usage/installation/#linux-and-macos) to install `Spicetify`:
 
 ```
-curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | share
+curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
+```
 
+Reload terminal then:
+
+```
 spicetify backup apply enable-devtools
 spicetify update
 ```
@@ -87,6 +94,23 @@ ln -s ~/dotfiles/bat  ~/.config/bat
 bat cache --build
 ```
 
+### [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+
+```
+sudo apt install zsh
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+```
+
+Make ZSH default shell:
+
+```
+chsh -s $(which zsh)
+```
+
+Log out and log back then.
+
 ### Other Tools
 
 #### [FZF](https://github.com/junegunn/fzf)
@@ -106,7 +130,7 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 #### [Taskbook](https://github.com/klaudiosinani/taskbook)
 
 ```
-npm install --global taskbook
+sudo npm install --global taskbook
 ```
 
 
