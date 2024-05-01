@@ -11,6 +11,12 @@ ln -s ~/dotfiles/regolith3/Xresources ~/.config/regolith3/Xresources
 ln -s ~/dotfiles/regolith3/i3/config ~/.config/regolith3/i3/config
 ```
 
+Install `i3xrocks` packages:
+
+```
+sudo apt install i3xrocks-wifi i3xrocks-focused-window-name i3xrocks-volume i3xrocks-battery
+```
+
 ### [Tmux](https://github.com/tmux/tmux)
 
 ```
@@ -113,6 +119,39 @@ Log out and log back then.
 
 ### Other Tools
 
+Some tools that do not require dotfiles configuration, but are prerequired for my daily basis:
+
+#### [Docker](https://docs.docker.com/engine/install/ubuntu/)
+
+```
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+# Install the latest version:
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+# Verify docker has been successfully installed
+sudo docker run hello-world
+```
+
+Run Docker as a non root user (requires to log out):
+
+```
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+
 #### [FZF](https://github.com/junegunn/fzf)
 
 ```
@@ -133,6 +172,11 @@ sudo dpkg -i ripgrep_13.0.0_amd64.deb
 sudo npm install --global taskbook
 ```
 
+#### [Teams](https://snapcraft.io/teams-for-linux)
+
+```
+sudo snap install teams-for-linux
+```
 
 ## Fonts
 
@@ -140,3 +184,9 @@ sudo npm install --global taskbook
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono) (used for VS Code coding font)
 
 ***Note :*** fonts for OS purpose are explicitely defined in `~/dotfiles/regolith3/Xresources` configuration file.
+
+If you want to apply your system font to Firefox, copy your installed font to `/usr/share/fonts`:
+
+```
+sudo cp ~/.local/share/fonts/CommitMono-400-Regular.otf /usr/share/fonts
+```
