@@ -164,14 +164,16 @@ set_from_resource $wm.screen.external wm.screen.external "DP-3" "HDMI-1"
 assign [class="Gnome-terminal"] $ws1
 assign [class="Code"] $ws2
 assign [class="firefox"] $ws3
-assign [class="Microsoft Teams - Preview"] $ws4
+assign [class="teams-for-linux"] $ws4
 assign [class="Slack"] $ws5
 assign [class="Spotify"] $ws6
+assign [class="f5vpn"] $ws10
+
 
 # Autostart apps
 exec --no-startup-id i3-msg 'exec gnome-terminal --working-directory /home/bdelacroix/Projets/eev2 -- tmux'
 exec --no-startup-id code
 exec --no-startup-id firefox
-exec --no-startup-id teams
+exec --no-startup-id teams-for-linux
 exec --no-startup-id slack
 
