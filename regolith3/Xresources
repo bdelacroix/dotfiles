@@ -16,6 +16,7 @@ wm.gaps.inner.size: 15
 ## Open floating window for file explorer
 wm.program.files: /usr/bin/nautilus --new-window --class=floating_window
 
+
 ## Workspaces colors based on Catppuccin Rosewater accent
 wm.workspace.01.name: 1: <span>1 <span foreground="#EAB9AE"></span> </span>
 wm.workspace.02.name: 2: <span>2 <span foreground="#E6AB9E"></span> </span>

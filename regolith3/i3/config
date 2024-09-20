@@ -147,18 +147,18 @@ include $HOME/.config/regolith3/i3/config.d/*
 ###############################################################################
 
 set_from_resource $wm.screen.laptop  wm.screen.laptop  "eDP-1"
-set_from_resource $wm.screen.external wm.screen.external "DP-3" "HDMI-1"
+set_from_resource $wm.screen.external wm.screen.external "HDMI-1"
 
-#workspace "$ws1" output $wm.screen.external
-#workspace "$ws2" output $wm.screen.external
-#workspace "$ws3" output $wm.screen.external
-#workspace "$ws4" output $wm.screen.external
-#workspace "$ws5" output $wm.screen.external
-#workspace "$ws6" output $wm.screen.laptop
-#workspace "$ws7" output $wm.screen.laptop
-#workspace "$ws8" output $wm.screen.laptop
-#workspace "$ws9" output $wm.screen.laptop
-#workspace "$ws10" output $wm.screen.laptop
+workspace 1 output $wm.screen.external
+workspace 2 output $wm.screen.external
+workspace 3 output $wm.screen.external
+workspace 4 output $wm.screen.laptop
+workspace 5 output $wm.screen.laptop
+workspace 6 output $wm.screen.laptop
+workspace 7 output $wm.screen.laptop
+workspace 8 output $wm.screen.laptop
+workspace 9 output $wm.screen.laptop
+workspace 10 output $wm.screen.laptop
 
 # Assign apps to workspaces
 assign [class="Gnome-terminal"] $ws1
