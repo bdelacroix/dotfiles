@@ -3,6 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:~/.local/bin/bat
 export PATH=$PATH:/home/bdelacroix/.spicetify
+export PATH=$PATH:/usr/bin/adr-tools/src
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
