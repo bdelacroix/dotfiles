@@ -82,6 +82,7 @@ plugins=(
   docker
   docker-compose
   vscode
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,3 +122,4 @@ alias g='git'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+. "/home/bdelacroix/.deno/env"

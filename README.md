@@ -102,11 +102,19 @@ bat cache --build
 
 ### [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
+
+Install ZSH:
+
 ```
 sudo apt install zsh
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+```
+
+Install Oh My Zsh and used plugins:
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
 Make ZSH default shell:
