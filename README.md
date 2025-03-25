@@ -198,3 +198,7 @@ If you want to apply your system font to Firefox, copy your installed font to `/
 ```
 sudo cp ~/.local/share/fonts/CommitMono-400-Regular.otf /usr/share/fonts
 ```
+
+## Keyboad layout
+
+I am using [QWERTY-fr](https://github.com/qwerty-fr/qwerty-fr) keyboard layout for my daily usages.
