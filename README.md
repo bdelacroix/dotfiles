@@ -24,6 +24,10 @@ Install `i3xrocks` packages:
 sudo apt install i3xrocks-wifi i3xrocks-focused-window-name i3xrocks-volume i3xrocks-battery
 ```
 
+```
+regolith-look refresh
+```
+
 ### [Tmux](https://github.com/tmux/tmux)
 
 ```
