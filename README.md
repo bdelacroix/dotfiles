@@ -136,6 +136,36 @@ Log out and log back then.
 
 Some tools that do not require dotfiles configuration, but are prerequired for my daily basis:
 
+#### [Github CLI](https://github.com/cli/cli?tab=readme-ov-file)
+
+Download package :
+
+```
+(type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
+	&& sudo mkdir -p -m 755 /etc/apt/keyrings \
+        && out=$(mktemp) && wget -nv -O$out https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+        && cat $out | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+	&& sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+	&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+	&& sudo apt update \
+	&& sudo apt install gh -y
+```
+
+Install :
+
+```
+sudo apt update
+sudo apt install gh
+```
+
+Generate a [personal access token](https://github.com/settings/tokens) on Github :
+
+```
+git config --global credential.helper store
+```
+
+Do a `pull`/`push` command, and fill username and generated PEAP. Github should not ask credentials anymore! 
+
 #### [VS Code](https://code.visualstudio.com/download#)
 
 Settings are auto-synced in VS Code.
