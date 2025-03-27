@@ -2,6 +2,13 @@
 
 The purpose of this repository is to allow quick and easy setup of the development environment I use on a daily basis. It gathers all my configuration files.
 
+## Common packages
+
+```
+sudo apt install curl vim
+npm install --global yarn
+```
+
 ## Configuration files
 
 ### [Regolith](https://regolith-desktop.com/docs/using-regolith/install/)
@@ -114,7 +121,7 @@ Install Oh My Zsh and used plugins:
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 Make ZSH default shell:
@@ -129,12 +136,22 @@ Log out and log back then.
 
 Some tools that do not require dotfiles configuration, but are prerequired for my daily basis:
 
+#### [VS Code](https://code.visualstudio.com/download#)
+
+Settings are auto-synced in VS Code.
+
+#### [Slack](https://slack.com/intl/fr-fr/help/articles/212924728-T%C3%A9l%C3%A9charger-Slack-pour-Linux--version-b%C3%AAta-)
+
+```
+sudo snap install slack
+```
+
 #### [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
 ```
 # Add Docker's official GPG key:
 sudo apt-get update
-sudo apt-get install ca-certificates curl
+sudo apt-get install ca-certificates
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -158,6 +175,22 @@ Run Docker as a non root user (requires to log out):
 ```
 sudo groupadd docker
 sudo usermod -aG docker $USER
+```
+
+### [NVM](https://github.com/nvm-sh/nvm)
+
+`nvm` (Node Version Manager) allows to quickly install and use different versions of node via the command line. 
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+```
+
+### [Deno](https://docs.deno.com/runtime/getting_started/installation/)
+
+`Deno` is a JavaScript and TypeScript runtime that was designed and built to be an alternative to Node.js
+
+```
+curl -fsSL https://deno.land/install.sh | sh
 ```
 
 #### [FZF](https://github.com/junegunn/fzf)
@@ -185,6 +218,17 @@ sudo npm install --global taskbook
 ```
 sudo snap install teams-for-linux
 ```
+
+#### Redshift
+
+Redshift is an open-source for managing screen luminosity.
+
+```
+sudo apt install redshift
+```
+
+> Please note symlinks provoques an unexpected error, place the configuration file in `~/.config/redshift.conf`
+
 
 ## Fonts
 
