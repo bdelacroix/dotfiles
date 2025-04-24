@@ -43,15 +43,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 ```
 
-### [Spotify](https://www.spotify.com/us/download/linux/)
+### [Spotify](https://www.spotify.com)
 
 #### Installation
 
-```
-curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt-get update && sudo apt-get install spotify-client
+Follow the given installation process [here](https://www.spotify.com/us/download/linux/).
 
+Then:
+```
 sudo chmod a+wr /usr/share/spotify
 sudo chmod a+wr /usr/share/spotify/Apps -R
 ```
@@ -168,7 +167,7 @@ Generate a [personal access token](https://github.com/settings/tokens) on Github
 git config --global credential.helper store
 ```
 
-Do a `pull`/`push` command, and fill username and generated PEAP. Github should not ask credentials anymore! 
+Do a `pull`/`push` command, and fill username and generated PEAP. Github should not ask credentials anymore!  
 
 #### [VS Code](https://code.visualstudio.com/download#)
 
@@ -226,6 +225,20 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
 curl -fsSL https://deno.land/install.sh | sh
 ```
+
+### [Phpactor](https://phpactor.readthedocs.io/en/master/usage/standalone.html)
+
+`Phpactor` is a the main LSP for PHP support.
+
+```
+sudo apt install php
+
+curl -Lo phpactor.phar https://github.com/phpactor/phpactor/releases/latest/download/phpactor.phar
+chmod a+x phpactor.phar
+mv phpactor.phar ~/.local/bin/phpactor
+```
+
+I am using VS code [extension](https://marketplace.visualstudio.com/items?itemName=phpactor.vscode-phpactor) for IDE completion.
 
 #### [FZF](https://github.com/junegunn/fzf)
 
